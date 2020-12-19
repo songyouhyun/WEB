@@ -1,0 +1,61 @@
+<!doctype html>
+    <html>
+    <head>
+        <title>WEB</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+        <style>
+            h1 {
+                border-bottom : 5px solid red;
+                margin-bottom : 0;
+                font-family: 'Do Hyeon', sans-serif;
+            }
+            ol {
+                border-right : 5px solid blue;
+                margin-top : 0;
+                font-family: 'Do Hyeon', sans-serif;
+            }
+            #contain{
+                display : grid;
+                grid-template-columns : 200px 1fr;
+            }
+            #a {font-family: 'Do Hyeon', sans-serif;}
+         </style>
+    </head>
+
+    <body id="bodytag">
+    <h1>
+         <a href="index.html">WEB !!!</a>
+
+         <input type="button" value="night" onclick="
+         if(this.value === 'night'){
+             document.querySelector('#bodytag').style.backgroundColor='black';
+             document.querySelector('#bodytag').style.color='white';
+            this.value = 'day';
+         } else {
+             document.querySelector('#bodytag').style.backgroundColor='white';
+             document.querySelector('#bodytag').style.color='black';
+             this.value = 'night';
+             }
+         ">
+         </h1>
+
+    <div id="contain">
+        <ol>
+            <li><a href = "1.html">html</a></li>
+            <li><a href = "2.html">css</a></li>
+            <li><a href = "3.html">javascript</a></li><br>
+        </ol>
+
+        <div id="a">WEB is world Wide WEB.</div>
+    </div>
+
+    <input type="button" value="DAY"
+    onclick="document.querySelector('body').style.backgroundColor='white';document.querySelector('body').style.color='black'"
+    >
+    <input type="button" value="NIGHT"
+    onclick="document.querySelector('body').style.backgroundColor='black';
+document.querySelector('body').style.color='white'">
+
+    </body>
+    </html>
